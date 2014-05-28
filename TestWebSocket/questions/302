@@ -1,0 +1,12 @@
+2014-04-27 23:24:08 Connecting to ws://127.0.0.1:8080/TestWebSocket/websocket
+javax.websocket.DeploymentException: The HTTP response from the server [HTTP/1.1 302 Found
+] did not permit the HTTP upgrade to WebSocket
+	at org.apache.tomcat.websocket.WsWebSocketContainer.parseStatus(WsWebSocketContainer.java:632)
+	at org.apache.tomcat.websocket.WsWebSocketContainer.processResponse(WsWebSocketContainer.java:616)
+	at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketContainer.java:344)
+	at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketContainer.java:201)
+	at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketContainer.java:222)
+	at com.guowl.websocket.TestWebSocket.start(TestWebSocket.java:25)
+	at com.guowl.websocket.TestWebSocket.main(TestWebSocket.java:34)
+	
+增加一个类：ExamplesConfig implements ServerApplicationConfig 具体作用还没有研究
